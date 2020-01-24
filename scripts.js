@@ -1,4 +1,5 @@
 window.onload = function() {
+  console.log('loading')
   document.querySelector('.option1').addEventListener('click', clickAnchorTag);
   document.querySelector('.option2').addEventListener('click', clickAnchorTag);
   document.querySelector('body').addEventListener('keydown', (event) => {
@@ -10,7 +11,6 @@ window.onload = function() {
       document.querySelector('.option2').click();
     }
   })
-  console.log('loaded')
 }
 
 const clickAnchorTag = (event) => {
