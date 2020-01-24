@@ -4,14 +4,7 @@ const option2 = document.querySelector('.option2')
 option1.addEventListener('click', clickAnchorTag);
 option2.addEventListener('click', clickAnchorTag);
 
-function clickAnchorTag(event) {
-  const event = document.createEvent('MouseEvent');
-  event = new CustomEvent('click');
-  const clickedLink = event.target;
-  clickedLink.dispatchEvent(event);
-}
-
-document.querySelector('body').addEventListener('keydown', (event) => {
+document.querySelector('body').addEventListener('keydown', function(event) {
   console.log(event.key);
   if (event.key == 65) {
     option1.click();
@@ -19,5 +12,12 @@ document.querySelector('body').addEventListener('keydown', (event) => {
     option2.click();
   }
 });
+
+function clickAnchorTag(event) {
+  const event = document.createEvent('MouseEvent');
+  event = new CustomEvent('click');
+  const clickedLink = event.target;
+  clickedLink.dispatchEvent(event);
+};
 
 console.log('connected')
