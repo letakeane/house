@@ -9,15 +9,15 @@ function clickAnchorTag(event) {
   event = new CustomEvent('click');
   const clickedLink = event.target;
   clickedLink.dispatchEvent(event);
-  console.log('clickable')
 }
 
 document.querySelector('body').addEventListener('keydown', (event) => {
   console.log(event.key);
-  if (event.key === 65) {
-    console.log('a')
+  if (event.key == 65) {
     option1.click();
-  } else if (event.key === 66) {
+  } else if (event.key == 66) {
     option2.click();
   }
-})
+});
+
+console.log('connected')
