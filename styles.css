@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 .scenario {
   margin: 50px auto;
   width: 60%;
