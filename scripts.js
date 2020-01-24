@@ -6,9 +6,9 @@ option2.addEventListener('click', clickAnchorTag);
 
 document.querySelector('body').addEventListener('keydown', function(event) {
   console.log(event.key);
-  if (event.key == 65) {
+  if (event.key == 'a') {
     option1.click();
-  } else if (event.key == 66) {
+  } else if (event.key == 'b') {
     option2.click();
   }
 });
