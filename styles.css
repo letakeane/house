@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+  font-family: 'Inconsolata', monospace;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  background: #363538;
+  color: white;
+}
+
+.scenario {
+  margin: 50px auto;
+  width: 60%;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span {
+  font-weight: bold;
+}
+
+.option1,
+.option2,
+a {
+  width: 45%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.option1:hover,
+.option2:hover,
+a:hover {
+  color: #bface6;
+}
+
+.option2 {
+  text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    width: 95%;
+  }
+  
+  .scenario {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  
+  .options {
+    flex-direction: column;
+  }
+  
+  .option2 {
+    text-align: left;
+  }
+  
+  .option1,
+  .option2 {
+    width: 100%;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+  }
+}
