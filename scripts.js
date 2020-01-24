@@ -18,4 +18,4 @@ function setUp() {
 }
 
 
-window.addEventListener('DOMContentLoaded', function() { alert('working!') }; );
+window.addEventListener('readystatechange', function(e) { alert('working!') }; );
