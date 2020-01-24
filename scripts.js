@@ -2,6 +2,7 @@ window.onload = () => {
   document.querySelector('.option1').addEventListener('click', clickAnchorTag);
   document.querySelector('.option2').addEventListener('click', clickAnchorTag);
   document.querySelector('body').addEventListener('keydown', (event) => {
+    console.log(event.key);
     if (event.key === 65) {
       console.log('a')
       document.querySelector('.option1').click();
