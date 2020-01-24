@@ -18,4 +18,4 @@ function setUp() {
 }
 
 
-window.onload = function() { alert('working!) };
+window.onload = function() { alert('working!') };
