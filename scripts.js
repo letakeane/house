@@ -18,4 +18,4 @@ function setUp() {
 }
 
 
-window.addEventListener('load', function() { alert('working!') }; );
+window.addEventListener('DOMContentLoaded', function() { alert('working!') }; );
