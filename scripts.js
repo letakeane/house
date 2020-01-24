@@ -22,3 +22,4 @@ document.querySelector('body').addEventListener('keydown', (event) => {
 })
 
 
+console.log('linked')
