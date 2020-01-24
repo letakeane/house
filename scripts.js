@@ -8,7 +8,7 @@ function clickAnchorTag(event) {
   clickedLink.dispatchEvent(event);
 };
 
-window.onload = function() {
+function setUp() {
   option1.addEventListener('click', clickAnchorTag);
   option2.addEventListener('click', clickAnchorTag);
 
@@ -16,3 +16,6 @@ window.onload = function() {
     console.log(event.key)
   })
 }
+
+
+window.onload = function() { alert('working!) };
