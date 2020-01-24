@@ -1,15 +1,5 @@
-console.log('loading')
-document.querySelector('.option1').addEventListener('click', clickAnchorTag);
-document.querySelector('.option2').addEventListener('click', clickAnchorTag);
-document.querySelector('body').addEventListener('keydown', (event) => {
-  console.log(event.key);
-  if (event.key === 65) {
-    console.log('a')
-    document.querySelector('.option1').click();
-  } else if (event.key === 66) {
-    document.querySelector('.option2').click();
-  }
-})
+const option1 = document.querySelector('.option1');
+const option2 = document.querySelector('.option2')
 
 const clickAnchorTag = (event) => {
   const event = document.createEvent('MouseEvent');
@@ -17,3 +7,18 @@ const clickAnchorTag = (event) => {
   const clickedLink = event.target;
   clickedLink.dispatchEvent(event);
 }
+
+option1.addEventListener('click', clickAnchorTag);
+option2.addEventListener('click', clickAnchorTag);
+
+document.querySelector('body').addEventListener('keydown', (event) => {
+  console.log(event.key);
+  if (event.key === 65) {
+    console.log('a')
+    option1.click();
+  } else if (event.key === 66) {
+    option2.click();
+  }
+})
+
+
