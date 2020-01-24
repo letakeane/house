@@ -10,6 +10,7 @@ window.onload = () => {
       document.querySelector('.option2').click();
     }
   })
+  console.log('loaded')
 }
 
 const clickAnchorTag = (event) => {
