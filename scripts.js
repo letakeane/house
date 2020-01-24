@@ -18,4 +18,4 @@ function setUp() {
 }
 
 
-window.addEventListener('readystatechange', function(e) { alert('working!') }; );
+window.onload = function(event) { alert('Working!') }
