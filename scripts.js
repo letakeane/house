@@ -1,6 +1,8 @@
 const option1 = document.querySelector('.option1');
 const option2 = document.querySelector('.option2');
 
+window.onload = function(event) { alert('Working!') }
+
 function clickAnchorTag(event) {
   const event = document.createEvent('MouseEvent');
   event = new CustomEvent('click');
@@ -16,6 +18,3 @@ function setUp() {
     console.log(event.key)
   })
 }
-
-
-window.onload = function(event) { alert('Working!') }
